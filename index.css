@@ -4,11 +4,81 @@ body{
   background: url('BG.png') no-repeat;
   background-image: 100%;
 }
-#circle{
-  width: 100px;
-  height: 100px;
+.circle{
+  width: 106px;
+  height: 106px;
   border-radius: 100%;
   background: transparent;
-  border: 10px solid blue;
+  border: 5px solid #00a4dd;
   border-right-color: transparent;
+  position: absolute;
+  display: block;
 }
+
+.circle:nth-child(1){
+  top: 490px;
+  left: 344px;
+  animation: rotate 5s linear infinite;
+
+}
+.circle:nth-child(2){
+  top: 467px;
+  left: 897px;
+  animation: rotate 2s linear infinite;
+
+}
+.circle:nth-child(3){
+  top: 1021px;
+  left: 358px;
+  animation: rotate 4s linear infinite;
+
+}
+.circle:nth-child(4){
+  top: 1021px;
+  left: 895px;
+  animation: rotate 3s linear infinite;
+
+}
+.circle:nth-child(5){
+  top: 1540px;
+  left: 376px;
+  animation: rotate 5s linear infinite;
+
+}
+.circle:nth-child(6){
+  top: 1540px;
+  left: 895px;
+  animation: rotate 4s linear infinite;
+
+}
+@keyframes rotate{
+  100% {transform: rotate(360deg);}
+}
+
+#timeContainer{
+  width: 500px;
+  height: 70px;
+  position: absolute;
+  left: 2250px;
+  bottom: 200px;
+  margin: 0;
+  padding: 0;
+  color: #aaabaf;
+}
+#date{
+  font-size: 20px;
+}
+#time{
+  font-size: 45px;
+  margin-left: 100px
+}
+
+#timeContainer span:nth-child(3){
+  font-size: 15px;
+  position: absolute;
+  left:0;
+  bottom: 10px;
+}
+
+
+
