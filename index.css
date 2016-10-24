@@ -1,3 +1,9 @@
+body{
+  height: 1890px;
+  width: 7680px;
+  background: url('BG.png') no-repeat;
+  background-image: 100%;
+}
 #circle{
   width: 100px;
   height: 100px;
