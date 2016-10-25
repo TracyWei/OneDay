@@ -65,12 +65,12 @@ body{
 
 .circle:nth-child(1){
   top: 490px;
-  left: 344px;
+  left: 358px;
   animation: rotate 5s linear infinite;
 
 }
 .circle:nth-child(2){
-  top: 467px;
+  top: 488px;
   left: 897px;
   animation: rotate 2s linear infinite;
 
@@ -89,7 +89,7 @@ body{
 }
 .circle:nth-child(5){
   top: 1540px;
-  left: 376px;
+  left: 358px;
   animation: rotate 5s linear infinite;
 
 }
@@ -214,5 +214,3 @@ body{
   left: 4051px;
   top: 1030px;
 }
-
-
