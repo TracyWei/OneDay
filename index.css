@@ -1,9 +1,57 @@
+@keyframes rotate{
+  100% {transform: rotate(360deg);}
+}
+@keyframes square_1{
+  0%{
+    left: 0px;
+  }
+  50%{
+    left: 800px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+@keyframes square_2{
+  0%{
+    left: 164px;
+  }
+  50%{
+    left: 1000px;
+  }
+  100%{
+    left: 164px;
+  }
+}
+@keyframes square_3{
+  0%{
+    left: 314px;
+  }
+  50%{
+    left: 1400px;
+  }
+  100%{
+    left: 314px;
+  }
+}
+@keyframes square_4{
+  0%{
+    left: 375px;
+  }
+  50%{
+    left: 1200px;
+  }
+  100%{
+    left: 375px;
+  }
+}
+
 body{
   height: 1890px;
   width: 7680px;
   background: url('BG.png') no-repeat;
-  background-image: 100%;
 }
+
 .circle{
   width: 106px;
   height: 106px;
@@ -51,15 +99,12 @@ body{
   animation: rotate 4s linear infinite;
 
 }
-@keyframes rotate{
-  100% {transform: rotate(360deg);}
-}
 
 #timeContainer{
   width: 500px;
   height: 70px;
   position: absolute;
-  left: 2250px;
+  left: 2293px;
   bottom: 200px;
   margin: 0;
   padding: 0;
@@ -72,13 +117,84 @@ body{
   font-size: 45px;
   margin-left: 100px
 }
-
 #timeContainer span:nth-child(3){
   font-size: 15px;
   position: absolute;
   left:0;
-  bottom: 10px;
+  bottom: 0px;
 }
 
+#timeDeco{
+  position: absolute;
+  left: 2293px;
+  bottom: 222px;
+}
+#timeDeco .line{
+  width: 390px;
+  height: 3px;
+  background-color: #089acc;
+}
+#timeDeco .halfCircle{
+  width: 68px;
+  height: 68px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #089acc #089acc transparent transparent;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -34px;
+  top: -71px;
+}
+#timeDeco .halfCircle::after{
+   content: '';
+   display: block;
+   position: absolute;
+   top:-16px;
+   right: -16px;
+   width: 96px;
+   height: 96px;
+   border-width: 4px;
+   border-style: solid;
+   border-radius: 50%;
+   border-color: #089acc #089acc transparent transparent;
+}
+
+#movingContainer{
+  width: 1470px;
+  height: 15px;
+  position: absolute;
+  left: 4050px;
+  top:638px;
+}
+#movingContainer .square{
+  height: 15px;
+  background: #089acc;
+  display: inline-block;
+  position: relative;
+}
+#movingContainer .square:nth-child(1){
+  width: 20px;
+  opacity: 0.9;
+  animation: square_1 6s linear infinite;
+}
+#movingContainer .square:nth-child(2){
+  width: 20px;
+  left: 164px;
+  opacity: 0.4;
+  animation: square_2 5s linear infinite .5s;
+}
+#movingContainer .square:nth-child(3){
+  width: 10px;
+  left: 314px;
+  opacity: 0.5;
+  animation: square_3 8s linear infinite .8s;
+}
+#movingContainer .square:nth-child(4){
+  width: 4px;
+  left: 375px;
+  opacity: 0.7;
+  animation: square_4 6.5s linear infinite 1s;
+}
 
 
