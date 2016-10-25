@@ -197,4 +197,17 @@ body{
   animation: square_4 6.5s linear infinite 1s;
 }
 
+#peopleMp4{
+  position: absolute;
+  left: 1370px;
+  top: 400px;
+}
+#peopleMp4 img{
+  position: absolute;
+  top:-3px;
+  left: 315px;
+  width: 240px;
+}
+
+
 
